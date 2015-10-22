@@ -259,10 +259,12 @@ class MyMplToolbar(NavigationToolbar):
         self._actions['zoom'] = self.a_zo
         self.a_zo.setCheckable(True)
 
+        '''
         # FULL VIEW:
         self.a_fv = self.addAction(QtGui.QIcon(iconDir + 'fullscreen-enter.svg'), \
             'Zoom full extent', self.parent.pltFullView)
         self.a_fv.setToolTip('Zoom to full extent')
+        '''
 
         # --------------------------------------
         self.addSeparator()
@@ -275,10 +277,12 @@ class MyMplToolbar(NavigationToolbar):
         self.a_gr.setCheckable(True)
         self.a_gr.setChecked(True)
 
+        '''
         # REDRAW:
         self.a_rd = self.addAction(QtGui.QIcon(iconDir + 'brush.svg'), \
                            'Redraw', self.parent.redraw)
         self.a_rd.setToolTip('Redraw Plot')
+        '''
 
         # SAVE:
         self.a_sv = self.addAction(QtGui.QIcon(iconDir + 'file.svg'), \
